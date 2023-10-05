@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Analizador de texto</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="index.js" defer></script>
+  <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
@@ -15,19 +15,19 @@
     <div class="container">
   
       <ul>
-        <li class= "categoria" data-testid="word-count">Recuento de palabras</li>
-        <li class= "categoria" data-testid="character-count">Recuento de cáracteres</li>
-        <li class= "categoria" data-testid="character-no-spaces-count">Recuento de caracteres sin espacios y signos de puntuación </li>
-        <li class= "categoria" data-testid="number-count">Recuento de números</li>
-        <li class= "categoria" data-testid="number-sum">Suma total de números</li>
-        <li class= "categoria" data-testid="word-length-average">Longitud media de palabras</li>
+        <li class= "categoria" data-testid="word-count">Recuento de palabras: <span></span></li>
+        <li class= "categoria" data-testid="character-count">Recuento de cáracteres: <span></span></li>
+        <li class= "categoria" data-testid="character-no-spaces-count">Recuento de caracteres sin espacios y signos de puntuación: <span></span></li>
+        <li class= "categoria" data-testid="number-count">Recuento de números: <span></span></li>
+        <li class= "categoria" data-testid="number-sum">Suma total de números: <span></span></li>
+        <li class= "categoria" data-testid="word-length-average">Longitud media de palabras: <span></span></li>
         
       </ul>
 
           <br>
-            <textarea name="area-texto"></textarea>
+            <textarea name="user-input"></textarea>
           <br>
-            <button id="boton-ejemplo">Botón ejemplo</button>
+            <button id="reset-button">Reset</button>
 
     </div>
     <footer> <p> Desarrollado por Camila Mayorga</p></footer> 
