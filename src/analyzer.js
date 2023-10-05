@@ -18,11 +18,11 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const words = text.split(' ');
     const filteredWords = words.map(palabra => palabra.replace(/[.,;!?]/g, ''));
-    return 
+    return (
       filteredWords.length > 0 ? 
       (filteredWords.reduce((acumulador, palabra) => acumulador + palabra.length, 0)) / filteredWords.length :
       0
-    ;
+    );
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
