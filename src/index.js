@@ -2,7 +2,12 @@ import analyzer from './analyzer.js';
 
 const boton = document.getElementById("reset-button");
 const textarea = document.querySelector('textarea[name="user-input"]');
-const segundaMetrica = document.querySelector('li.categoria:nth-child(1) span');
+const metrica1 = document.querySelector('li.categoria:nth-child(1) span');
+const metrica2 = document.querySelector('li.categoria:nth-child(2) span');
+const metrica3 = document.querySelector('li.categoria:nth-child(3) span');
+const metrica4 = document.querySelector('li.categoria:nth-child(4) span');
+const metrica5 = document.querySelector('li.categoria:nth-child(5) span');
+const metrica6 = document.querySelector('li.categoria:nth-child(6) span');
 
 boton.addEventListener('click',function (){
     if(textarea.value===''){
@@ -14,8 +19,12 @@ boton.addEventListener('click',function (){
 }
 )
 textarea.addEventListener('input', function(){
-    const textAnalyzer = analyzer.getCharacterCount(textarea.value);
-    segundaMetrica.textContent=textAnalyzer;
+    metrica1.textContent=analyzer.getWordCount(textarea.value);
+    metrica2.textContent=analyzer.getCharacterCount(textarea.value);
+    metrica3.textContent=analyzer.getCharacterCountExcludingSpaces(textarea.value);
+    metrica4.textContent=analyzer.getAverageWordLength(textarea.value);
+    metrica5.textContent=analyzer.getNumberCount(textarea.value);
+    metrica6.textContent=analyzer.getNumberSum(textarea.value);
 })
 
 
