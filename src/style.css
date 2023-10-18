@@ -1,58 +1,58 @@
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
-  *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  } 
- 
-    body {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        background-color: #70008C;
-        align-items: center;
-    }
-    
-    h1 {
-        font-weight: 900;
-        text-align: center;
-        align-items: center;
-        text-transform: uppercase;
-        color: #FFF;
-        font-size: 40px;
-        padding: 2%;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
 
-    textarea {
-        border-radius: 20px;
-        border: 3px solid rgba(248, 220, 255, 0.44);
-        background: rgba(55, 0, 69, 0.60);
-        width: 750px;
-        height: 180px;
-        flex-shrink: 0;
-        color: #FFF;
-    }
-    #container{
-        min-height: 100vp;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        color: #FFF;
-        font-weight: 700;
-       
-    }
+  body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      background-color: #70008C;
+      align-items: center;
+  }
+  
+  h1 {
+      font-weight: 900;
+      text-align: center;
+      align-items: center;
+      text-transform: uppercase;
+      color: #FFF;
+      font-size: 40px;
+      padding: 2%;
+  }
 
-    .button{ 
-        display: flex;
-        flex-direction: column;
-    }
+  textarea {
+      border-radius: 20px;
+      border: 3px solid rgba(248, 220, 255, 0.44);
+      background: rgba(55, 0, 69, 0.60);
+      width: 750px;
+      height: 180px;
+      flex-shrink: 0;
+      color: #FFF;
+  }
+  .container{
+      min-height: 100vp;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      color: #FFF;
+      font-weight: 700;
+     
+  }
+
+  .button{ 
+      display: flex;
+      flex-direction: column;
+  }
 
 
-    .categoria {
-        display: flex;
-        padding: 10px 40px;
-        background-color: #D98AF8;
-        border: 1px solid #f8ddffdf;
-        border-radius: 40px;
-        margin: 10px;
-        }
+  .categoria {
+      display: flex;
+      padding: 10px 40px;
+      background-color: #D98AF8;
+      border: 1px solid #f8ddffdf;
+      border-radius: 40px;
+      margin: 10px;
+      }
